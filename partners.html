@@ -3,23 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Partners | Southern Spoon</title>
+<title>Partners | Southern Spoon Nashville</title>
+<meta name="description" content="Southern Spoon's preferred venues, wedding planners, and vendors across the Nashville area.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://southernspoontn.com/partners.html">
+<link rel="icon" href="assets/logos/logo_fb.jpg" type="image/jpeg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Southern Spoon">
+<meta property="og:title" content="Partners | Southern Spoon Nashville">
+<meta property="og:description" content="Southern Spoon's preferred venues, wedding planners, and vendors across the Nashville area.">
+<meta property="og:url" content="https://southernspoontn.com/partners.html">
+<meta property="og:image" content="https://southernspoontn.com/assets/images/reception-table-long-formal-setting.webp">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .vendor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1px;
+    background: var(--gray-100);
+  }
+  .vendor-grid a {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    aspect-ratio: 1;
+  }
+  .vendor-grid img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(1);
+    opacity: 0.75;
+    transition: filter 0.25s ease, opacity 0.25s ease;
+  }
+  .vendor-grid a:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+</style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="header-inner">
-    <div class="brand">
-      <div class="brand-mark">SS</div>
-      <div class="brand-name">Southern Spoon</div>
-    </div>
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="assets/logos/Logo_160x160.png" alt="Southern Spoon — Nashville, TN">
+    </a>
     <div class="header-contact">
       <a href="tel:6154621285">(615) 462-1285</a>
       <span class="social-links">
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="X / Twitter">X</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="X / Twitter">x</a>
       </span>
     </div>
   </div>
@@ -39,52 +82,78 @@
 </header>
 
 <div class="hero page-hero">
-  <h1>Our Partners</h1>
-  <p>Proud to work with some of Nashville's best venues, planners, and vendors.</p>
+  <img class="hero-bg" src="assets/images/reception-table-long-formal-setting.webp" alt="Formal wedding reception table at a partner venue" loading="eager" fetchpriority="high">
+  <div class="hero-content">
+    <h1>Our Partners</h1>
+    <p>Proud to work with some of Nashville's best venues, planners, and vendors.</p>
+  </div>
 </div>
 
 <section>
   <div class="container">
-    <h2>Venues</h2>
+    <span class="eyebrow-label">Venues &amp; Vendors</span>
+    <h2>Preferred Partners</h2>
     <hr class="section-divider" style="margin-left:0;">
-    <ul class="tag-list">
-      <li>Firefly Lane Events</li>
-      <li>14 Tennessee</li>
-      <li>Sycamore Farms</li>
-      <li>The White Dove Barn</li>
-      <li>The Cordelle</li>
-      <li>Fiddledee Farms</li>
-      <li>Annie Acres</li>
-      <li>Long Hollow Gardens</li>
-      <li>Allenbrooke</li>
-      <li>Hidden Creek Farm</li>
-      <li>Ruby Nashville</li>
-      <li>Clementine Hall</li>
-      <li>The Saint Elle</li>
-      <li>Cool Springs House</li>
-      <li>Ozari</li>
-      <li>The Bedford</li>
-      <li>Ruskin Venues</li>
-      <li>Wilburn Street Studio</li>
-      <li>A Room with a View</li>
-      <li>Copperline Ranch</li>
-      <li>Beau Cheval</li>
-      <li>Rural Hill Farm</li>
-      <li>Belle Meade</li>
-      <li>Five Star Retreat</li>
-      <li>Homestead Manor</li>
-      <li>Seven Stones Events</li>
-      <li>The View at Fountains</li>
-      <li>Tuckers Gap</li>
-      <li>Ravenswood Mansion</li>
-      <li>Nashville Parthenon</li>
-    </ul>
+    <p class="form-note" style="margin-bottom: 28px;">Click a logo to visit their website. (Links below are placeholders — swap in the real URL for each vendor in <code>partners.html</code>.)</p>
+    <div class="vendor-grid">
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/14-tennessee.png" alt="14 Tennessee" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/allenbrooke-farms.png" alt="Allenbrooke Farms" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/annie-acres.png" alt="Annie Acres" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/bedford-event-venue.png" alt="The Bedford" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/clementine.png" alt="Clementine Hall" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/coolsprings-house.png" alt="Cool Springs House" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/cordelle.png" alt="The Cordelle" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/estate-cherokee-dock.png" alt="Estate Cherokee Dock" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/everlasting-events.png" alt="Everlasting Events" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/fiddledee.png" alt="Fiddledee Farms" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/hickory-meadows.png" alt="Hickory Meadows" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/hidden-creek-farm.png" alt="Hidden Creek Farm" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/long-hollow-gardens.png" alt="Long Hollow Gardens" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/memory-lane-events.png" alt="Memory Lane Events" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/ozari.png" alt="Ozari" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/ravenswood.png" alt="Ravenswood Mansion" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/ruby.png" alt="Ruby Nashville" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/ruskin.png" alt="Ruskin Venues" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/selah-vie.png" alt="Selah Vie" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/southern-vine.png" alt="Southern Vine Co." loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/steelemag.png" alt="Steele Magnolia" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/sutlan-co.png" alt="Sutlan Co." loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/sycamore-farms.png" alt="Sycamore Farms" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/the-barn-at-sycamore-farms.png" alt="The Barn at Sycamore Farms" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/the-saint-elle.png" alt="The Saint Elle" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/white-dove-barn.png" alt="The White Dove Barn" loading="lazy"></a>
+      <a href="#" target="_blank" rel="noopener"><img src="assets/preferred-vendors/wilburn-street-studio.png" alt="Wilburn Street Studio" loading="lazy"></a>
+    </div>
   </div>
 </section>
 
 <section class="alt">
   <div class="container">
-    <h2>Planners</h2>
+    <span class="eyebrow-label">More Venues</span>
+    <h2>Also Featuring</h2>
+    <hr class="section-divider" style="margin-left:0;">
+    <ul class="tag-list">
+      <li>Firefly Lane Events</li>
+      <li>Fiddledee Farms</li>
+      <li>Homestead Manor</li>
+      <li>Seven Stones Events</li>
+      <li>The View at Fountains</li>
+      <li>Tuckers Gap</li>
+      <li>Belle Meade</li>
+      <li>Five Star Retreat</li>
+      <li>Copperline Ranch</li>
+      <li>Beau Cheval</li>
+      <li>Rural Hill Farm</li>
+      <li>A Room with a View</li>
+      <li>Nashville Parthenon</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <span class="eyebrow-label">Planners</span>
+    <h2>Wedding Planners</h2>
     <hr class="section-divider" style="margin-left:0;">
     <ul class="tag-list">
       <li>EBJ and Company</li>
@@ -99,9 +168,10 @@
   </div>
 </section>
 
-<section>
+<section class="alt">
   <div class="container">
-    <h2>Vendors</h2>
+    <span class="eyebrow-label">Vendors</span>
+    <h2>Other Vendors</h2>
     <hr class="section-divider" style="margin-left:0;">
     <ul class="tag-list">
       <li>Nash Taps</li>
