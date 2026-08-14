@@ -1,5 +1,9 @@
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  const data = Object.fromEntries(new FormData(e.target).entries());
-  alert('Thanks, ' + (data.name || 'friend') + '! This is a placeholder — hook this form up to an email service to actually receive submissions.');
+document.querySelectorAll('.contact-form').forEach(function (form) {
+  form.addEventListener('submit', function () {
+    var btn = form.querySelector('button[type="submit"]');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+    }
+  });
 });

@@ -10,7 +10,9 @@ The live site is built on GoDaddy Website Builder, which doesn't give you export
 
 - **Colors**: true black and white, matching the brand — no added color palette.
 - **Fonts**: Playfair Display (headings) + Open Sans (body), loaded from Google Fonts — these are the same fonts the original site uses.
-- **Logo**: the real Southern Spoon lockup (`assets/logos/Logo_160x160.png`) in the header, and the monogram (`assets/logos/logo_fb.jpg`) as the favicon.
+- **Logo**: the real Southern Spoon monogram (`assets/logos/logo_fb.jpg`) as the header icon and favicon, paired with a live-text "Southern Spoon®" wordmark (crisper at large sizes than scaling up a raster logo). The full lockup file (`assets/logos/Logo_160x160.png`) is still in the repo if you'd rather use it directly somewhere.
+- **Header**: centered monogram + wordmark, social icons and phone flanking it, nav with a "More" dropdown for secondary pages — matches the real site's layout.
+- **Homepage**: split-screen sections (photo on one side, copy on a plain background on the other) instead of text-over-photo, so text is never competing with a busy image for contrast.
 - **Photos**: all photography renders in full color.
 - **Vendor logos** on the Partners page render in grayscale and go full color on hover — a small interactive touch that keeps the page feeling premium.
 
@@ -25,9 +27,9 @@ southern-spoon/
 ├── events.html
 ├── photos.html                 Full photo gallery
 ├── partners.html                Venues / planners / vendors, with real vendor logos
-├── contact-us.html             Contact form + business info
+├── contact-us.html             Contact form + business info + map
 ├── css/style.css               All shared styling
-├── js/contact-form.js          Contact form behavior
+├── js/contact-form.js          Disables the submit button while a form is sending
 ├── sitemap.xml                 For search engines
 ├── robots.txt                  For search engines
 └── assets/
@@ -61,10 +63,10 @@ This environment has no image-editing tools available (no ImageMagick, Photoshop
 
 ## Things to finish
 
-1. **Partner links** — every vendor logo on `partners.html` currently links to `#`. Swap in each vendor's real website URL (search for `href="#"` in that file).
-2. **Contact form** — `contact-us.html` submits to nothing right now (`js/contact-form.js` just shows an alert). Wire it to a form service like Formspree or EmailJS, or a small backend, so submissions actually arrive by email.
+1. **Activate the contact form (one-time step)** — both contact forms (homepage and `contact-us.html`) submit to `info@southernspoontn.com` via [FormSubmit](https://formsubmit.co), a free form-to-email service that needs no signup or API key. The *first* real submission triggers a confirmation email to `info@southernspoontn.com` — someone needs to open it and click "Activate Form" before submissions actually deliver. Until then, submitted messages are silently dropped. Test it once after deploying.
+2. **Partner links** — every vendor logo on `partners.html` currently links to `#`. Swap in each vendor's real website URL (search for `href="#"` in that file).
 3. **Social links** — Facebook/Instagram/X links are placeholders (`#`) in the header and footer of every page. Fill in the real profile URLs, and add them to the `sameAs` array in the homepage's JSON-LD once real.
-4. **reCAPTCHA** — the original site's contact form uses Google reCAPTCHA; not included here since it needs a site key. Add it if you want spam protection.
+4. **Form spam protection** — a hidden honeypot field (`_honey`) is already wired in; FormSubmit also shows its own optional CAPTCHA challenge automatically. No Google reCAPTCHA site key needed.
 5. **Deploy** — once hosted at the real domain, double-check every `https://southernspoontn.com/...` reference in the `<meta>` tags and JSON-LD matches the live URL.
 
 ## Editing

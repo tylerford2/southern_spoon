@@ -69,7 +69,10 @@
 <section>
   <div class="container contact-layout">
     <div>
-      <form class="contact-form" id="contact-form">
+      <form class="contact-form" id="contact-form" action="https://formsubmit.co/info@southernspoontn.com" method="POST">
+        <input type="hidden" name="_subject" value="New inquiry from southernspoontn.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off">
         <div>
           <label for="name">Name</label>
           <input type="text" id="name" name="name">
@@ -103,7 +106,7 @@
           <input type="number" id="guests" name="guests" min="0">
         </div>
         <button type="submit" class="btn">Send</button>
-        <p class="form-note">This form currently just previews your submission in the browser — wire it up to an email service (e.g. Formspree, EmailJS) or a backend to actually send messages.</p>
+        <p class="form-note">Your message goes straight to our inbox — we'll be in touch soon.</p>
       </form>
     </div>
 
@@ -124,6 +127,10 @@
     </div>
   </div>
 </section>
+
+<div class="map-embed">
+  <iframe src="https://maps.google.com/maps?q=1303+Plaza+Drive,+Smyrna,+TN+37167&amp;z=14&amp;output=embed" title="Map showing Southern Spoon's location at 1303 Plaza Drive, Smyrna, TN" loading="lazy"></iframe>
+</div>
 
 <footer class="site-footer">
   <div class="container">
