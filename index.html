@@ -58,19 +58,18 @@
 <body>
 
 <header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="brand">
-      <img class="brand-logo" src="assets/logos/Logo_160x160.png" alt="Southern Spoon — Nashville, TN">
-    </a>
-    <div class="header-contact">
-      <a href="tel:6154621285">(615) 462-1285</a>
-      <span class="social-links">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Instagram">ig</a>
-        <a href="#" aria-label="X / Twitter">x</a>
-      </span>
+  <div class="header-top">
+    <div class="social-links">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Instagram">ig</a>
+      <a href="#" aria-label="X / Twitter">x</a>
     </div>
+    <a href="index.html" class="brand-monogram">
+      <img src="assets/logos/logo_fb.jpg" alt="Southern Spoon monogram">
+    </a>
+    <div class="header-phone"><a href="tel:6154621285">(615) 462-1285</a></div>
   </div>
+  <div class="brand-wordmark"><a href="index.html">Southern Spoon<sup>&reg;</sup></a></div>
   <nav class="main-nav">
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
@@ -78,60 +77,62 @@
       <li><a href="catering-info.html">Catering Info</a></li>
       <li><a href="https://streetfoodfinder.com/southernspoontn" target="_blank" rel="noopener">Find Our Food Truck</a></li>
       <li><a href="about-our-food-truck.html">About our Food Truck</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="partners.html">Partners</a></li>
-      <li><a href="contact-us.html">Contact Us</a></li>
+      <li class="has-dropdown">
+        <button type="button" class="dropdown-toggle">More &#9662;</button>
+        <ul class="dropdown">
+          <li><a href="events.html">Events</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 </header>
 
-<div class="hero">
-  <img class="hero-bg" src="assets/images/wedding-buffet-guests-being-served.webp" alt="Guests being served at a Southern Spoon catered wedding reception cocktail hour" loading="eager" fetchpriority="high">
-  <div class="hero-content">
-    <span class="eyebrow">Nashville, Tennessee</span>
+<section class="split-section split-hero">
+  <div class="split-media">
+    <img src="assets/images/wedding-buffet-guests-being-served.webp" alt="Guests being served at a Southern Spoon catered wedding reception cocktail hour" loading="eager" fetchpriority="high">
+  </div>
+  <div class="split-copy">
+    <span class="eyebrow">Southern Spoon Catering</span>
     <h1>Southern Comfort with a Creative Twist</h1>
-    <p>Full-service catering and a mobile food truck bringing reimagined Southern flavors to Nashville, TN.</p>
-  </div>
-</div>
-
-<section>
-  <div class="container two-col">
-    <div>
-      <span class="eyebrow-label">Catering</span>
-      <h2>Southern Flavors for Your Special Day!</h2>
-      <hr class="section-divider" style="margin-left:0;">
-      <p>Southern Spoon Catering has been serving reimagined Southern cuisine since 2008. Led by Chef Adam Barnes, our team merges traditional Southern flavors with contemporary cooking techniques for weddings and special events throughout Nashville.</p>
-      <p>Every meal is made with heart.</p>
-      <a class="btn" href="catering-info.html">Explore Catering</a>
-    </div>
-    <div class="photo-frame">
-      <img src="assets/images/charcuterie-roulade-appetizer-platter.webp" alt="Charcuterie and appetizer platter prepared by Southern Spoon catering" loading="lazy">
-    </div>
   </div>
 </section>
 
-<section class="alt">
-  <div class="container two-col">
-    <div class="photo-frame" style="order:2;">
-      <img src="assets/images/chef-adam-barnes-with-food-truck.webp" alt="Chef Adam Barnes standing beside the Southern Spoon food truck in Nashville" loading="lazy">
-    </div>
-    <div style="order:1;">
-      <span class="eyebrow-label">Food Truck</span>
-      <h2>Southern Flavor on the Move!</h2>
-      <hr class="section-divider" style="margin-left:0;">
-      <p>Our mobile kitchen brings Southern dining straight to you. Find us out and about Nashville, or book us for your next event.</p>
-      <a class="btn" href="about-our-food-truck.html">Meet the Truck</a>
-    </div>
+<section class="split-section">
+  <div class="split-copy">
+    <span class="eyebrow">Catering</span>
+    <h2>Southern Flavors for Your Special Day!</h2>
+    <p>Since 2008, Southern Spoon has been redefining southern cuisine for couples and families in Nashville, TN. We specialize in turning classic southern favorites into unforgettable dishes that make your big day truly special.</p>
+    <p>Led by Chef Adam Barnes, our team combines a love for southern flavors with fresh, modern techniques to create a menu that's uniquely yours. From intimate gatherings to grand celebrations, we're here to bring warmth, flavor, and creativity to your wedding or event.</p>
+    <p>At Southern Spoon, every meal is made with heart. Let us help make your special moments even more delicious.</p>
+    <a class="btn" href="catering-info.html">Find Out More</a>
+  </div>
+  <div class="split-media">
+    <img src="assets/images/reception-table-long-formal-setting.webp" alt="Long formal wedding reception table catered by Southern Spoon" loading="lazy">
   </div>
 </section>
 
-<section>
-  <div class="container" style="text-align:center;">
-    <h2>Ready to Book?</h2>
-    <hr class="section-divider">
-    <p>Get in touch for a catering quote or to find out where the truck is parked next.</p>
-    <a class="btn" href="contact-us.html">Contact Us</a>
+<section class="split-section">
+  <div class="split-media">
+    <img src="assets/images/food-truck-wide-daytime-grass.webp" alt="Southern Spoon food truck parked on grass on a sunny day" loading="lazy">
+  </div>
+  <div class="split-copy">
+    <span class="eyebrow">Food Truck</span>
+    <h2>Southern Flavor on the Move!</h2>
+    <p>Nashville's favorite mobile kitchen is here to bring bold southern flavors straight to you!</p>
+    <p><em><strong>Want to find us?</strong></em></p>
+    <p>Follow us <strong>@SouthernSpoonTN</strong> to see where we'll be serving up southern goodness next!</p>
+    <p>Delicious, convenient, and always made with heart&mdash;let Southern Spoon make your day even tastier!</p>
+    <a class="btn" href="about-our-food-truck.html">Find Out More</a>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Find Our Food Truck</h2>
+    <a class="btn btn-white" href="https://streetfoodfinder.com/southernspoontn" target="_blank" rel="noopener">Truck Locator</a>
   </div>
 </section>
 

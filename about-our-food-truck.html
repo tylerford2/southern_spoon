@@ -26,19 +26,18 @@
 <body>
 
 <header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="brand">
-      <img class="brand-logo" src="assets/logos/Logo_160x160.png" alt="Southern Spoon — Nashville, TN">
-    </a>
-    <div class="header-contact">
-      <a href="tel:6154621285">(615) 462-1285</a>
-      <span class="social-links">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Instagram">ig</a>
-        <a href="#" aria-label="X / Twitter">x</a>
-      </span>
+  <div class="header-top">
+    <div class="social-links">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Instagram">ig</a>
+      <a href="#" aria-label="X / Twitter">x</a>
     </div>
+    <a href="index.html" class="brand-monogram">
+      <img src="assets/logos/logo_fb.jpg" alt="Southern Spoon monogram">
+    </a>
+    <div class="header-phone"><a href="tel:6154621285">(615) 462-1285</a></div>
   </div>
+  <div class="brand-wordmark"><a href="index.html">Southern Spoon<sup>&reg;</sup></a></div>
   <nav class="main-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -46,10 +45,15 @@
       <li><a href="catering-info.html">Catering Info</a></li>
       <li><a href="https://streetfoodfinder.com/southernspoontn" target="_blank" rel="noopener">Find Our Food Truck</a></li>
       <li><a href="about-our-food-truck.html" class="active">About our Food Truck</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="partners.html">Partners</a></li>
-      <li><a href="contact-us.html">Contact Us</a></li>
+      <li class="has-dropdown">
+        <button type="button" class="dropdown-toggle">More &#9662;</button>
+        <ul class="dropdown">
+          <li><a href="events.html">Events</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 </header>
