@@ -11,7 +11,7 @@ The live site is built on GoDaddy Website Builder, which doesn't give you export
 - **Colors**: true black and white, matching the brand — no added color palette.
 - **Fonts**: Playfair Display (headings) + Open Sans (body), loaded from Google Fonts — these are the same fonts the original site uses.
 - **Logo**: the real Southern Spoon lockup (`assets/logos/Logo_160x160.png`) in the header, and the monogram (`assets/logos/logo_fb.jpg`) as the favicon.
-- **Photo treatment**: food photography stays in full color (it needs to look appetizing); atmospheric/environment shots (the truck at dusk, evening crowds) are true black & white via the `.photo--mono` CSS class. This is a deliberate, selective choice — not a blanket filter. Swap the class on/off per `<img>` to change treatment.
+- **Photos**: all photography renders in full color.
 - **Vendor logos** on the Partners page render in grayscale and go full color on hover — a small interactive touch that keeps the page feeling premium.
 
 ## Structure
