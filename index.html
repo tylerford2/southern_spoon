@@ -50,8 +50,19 @@
     "longitude": "-86.7744"
   },
   "areaServed": "Nashville, TN",
-  "servesCuisine": "Southern",
-  "priceRange": "$$"
+  "servesCuisine": "Southern Fusion",
+  "priceRange": "$$",
+  "hasMap": "https://maps.app.goo.gl/wmHcyHtJChNEPofJA",
+  "sameAs": [
+    "https://www.facebook.com/southernspoontn",
+    "https://www.instagram.com/southernspoontn",
+    "https://x.com/southernspoontn"
+  ],
+  "foundingDate": "2008",
+  "founder": [
+    { "@type": "Person", "name": "Adam Barnes" },
+    { "@type": "Person", "name": "Crystal Barnes" }
+  ]
 }
 </script>
 </head>
@@ -60,9 +71,9 @@
 <header class="site-header">
   <div class="header-top">
     <div class="social-links">
-      <a href="#" aria-label="Facebook">f</a>
-      <a href="#" aria-label="Instagram">ig</a>
-      <a href="#" aria-label="X / Twitter">x</a>
+      <a href="https://www.facebook.com/southernspoontn" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+      <a href="https://www.instagram.com/southernspoontn" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+      <a href="https://x.com/southernspoontn" aria-label="X / Twitter" target="_blank" rel="noopener">x</a>
     </div>
     <a href="index.html" class="brand-monogram">
       <img src="assets/logos/logo_fb.jpg" alt="Southern Spoon monogram">
@@ -70,23 +81,26 @@
     <div class="header-phone"><a href="tel:6154621285">(615) 462-1285</a></div>
   </div>
   <div class="brand-wordmark"><a href="index.html">Southern Spoon<sup>&reg;</sup></a></div>
-  <nav class="main-nav">
-    <ul>
+  <nav class="main-nav" data-open="false">
+    <div class="nav-inner">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="primary-menu">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="catering-menus.html">Catering Menus</a></li>
       <li><a href="catering-info.html">Catering Info</a></li>
       <li><a href="https://streetfoodfinder.com/southernspoontn" target="_blank" rel="noopener">Find Our Food Truck</a></li>
-      <li><a href="about-our-food-truck.html">About our Food Truck</a></li>
+      <li><a href="about-us.html">About Us</a></li>
       <li class="has-dropdown">
-        <button type="button" class="dropdown-toggle">More &#9662;</button>
+        <button type="button" class="dropdown-toggle" aria-expanded="false">More <span class="caret">&#9662;</span></button>
         <ul class="dropdown">
-          <li><a href="events.html">Events</a></li>
-          <li><a href="photos.html">Photos</a></li>
+            <li><a href="photos.html">Photos</a></li>
           <li><a href="partners.html">Partners</a></li>
           <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
       </li>
-    </ul>
+      </ul>
+    </div>
   </nav>
 </header>
 
@@ -125,7 +139,7 @@
     <p><em><strong>Want to find us?</strong></em></p>
     <p>Follow us <strong>@SouthernSpoonTN</strong> to see where we'll be serving up southern goodness next!</p>
     <p>Delicious, convenient, and always made with heart&mdash;let Southern Spoon make your day even tastier!</p>
-    <a class="btn" href="about-our-food-truck.html">Find Out More</a>
+    <a class="btn" href="about-us.html">Find Out More</a>
   </div>
 </section>
 
@@ -144,6 +158,7 @@
       <form class="contact-form" id="contact-form" action="https://formsubmit.co/info@southernspoontn.com" method="POST">
         <input type="hidden" name="_subject" value="New inquiry from southernspoontn.com">
         <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://southernspoontn.com/?sent=true">
         <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off">
         <div>
           <label for="home-name">Name</label>
@@ -180,6 +195,10 @@
         <button type="submit" class="btn">Send</button>
         <p class="form-note">Your message goes straight to our inbox — we'll be in touch soon. Or follow us <strong>@SouthernSpoonTN</strong> to find out where we'll be, or locate us on the <a href="https://streetfoodfinder.com/southernspoontn" target="_blank" rel="noopener">truck finder</a>.</p>
       </form>
+      <div class="form-thanks">
+        <h3>Thanks — your message is on its way!</h3>
+        <p>We'll be in touch soon. In the meantime, follow us <strong>@SouthernSpoonTN</strong> to see where we'll be next.</p>
+      </div>
     </div>
   </div>
 
@@ -192,10 +211,6 @@
       <a href="mailto:catering@southernspoontn.com">catering@southernspoontn.com</a>
     </p>
   </div>
-
-  <div class="map-embed">
-    <iframe src="https://maps.google.com/maps?q=1303+Plaza+Drive,+Smyrna,+TN+37167&amp;z=14&amp;output=embed" title="Map showing Southern Spoon's location at 1303 Plaza Drive, Smyrna, TN" loading="lazy"></iframe>
-  </div>
 </section>
 
 <footer class="site-footer">
@@ -203,7 +218,7 @@
     <div class="footer-grid">
       <div>
         <h4>Southern Spoon</h4>
-        <p>1303 Plaza Drive<br>Smyrna, Tennessee 37167<br>United States</p>
+        <p><a href="https://maps.app.goo.gl/wmHcyHtJChNEPofJA" target="_blank" rel="noopener">1303 Plaza Drive<br>Smyrna, Tennessee 37167<br>United States</a></p>
       </div>
       <div>
         <h4>Contact</h4>
@@ -217,9 +232,9 @@
       <div>
         <h4>Follow Us</h4>
         <p>
-          <a href="#">Facebook</a><br>
-          <a href="#">Instagram — @SouthernSpoonTN</a><br>
-          <a href="#">X — @southernspoontn</a>
+          <a href="https://www.facebook.com/southernspoontn" target="_blank" rel="noopener">Facebook</a><br>
+          <a href="https://www.instagram.com/southernspoontn" target="_blank" rel="noopener">Instagram — @SouthernSpoonTN</a><br>
+          <a href="https://x.com/southernspoontn" target="_blank" rel="noopener">X — @southernspoontn</a>
         </p>
       </div>
       <div>
@@ -235,5 +250,6 @@
 </footer>
 
 <script src="js/contact-form.js"></script>
+<script src="js/nav.js" defer></script>
 </body>
 </html>
